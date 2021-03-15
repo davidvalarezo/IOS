@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TagCell" id="lf4-eu-UoX" customClass="TagCell" customModule="RadioStation">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lf4-eu-UoX" id="YZF-et-pfK" customClass="TagCell" customModule="RadioStation" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="L" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwa-Xy-ymV">
+                        <rect key="frame" x="10" y="1.5" width="18.5" height="41"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dL7-w7-RsW">
+                        <rect key="frame" x="61" y="11.5" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dL7-w7-RsW" firstAttribute="centerY" secondItem="YZF-et-pfK" secondAttribute="centerY" id="Jk7-tp-dpG" customClass="TagCell" customModule="RadioStation" customModuleProvider="target"/>
+                    <constraint firstItem="pwa-Xy-ymV" firstAttribute="leading" secondItem="YZF-et-pfK" secondAttribute="leading" constant="10" id="dOU-AD-8Oe"/>
+                    <constraint firstItem="dL7-w7-RsW" firstAttribute="leading" secondItem="pwa-Xy-ymV" secondAttribute="trailing" constant="32.5" id="iVT-3G-T2y"/>
+                    <constraint firstItem="pwa-Xy-ymV" firstAttribute="centerY" secondItem="YZF-et-pfK" secondAttribute="centerY" id="sh0-Zd-N5u"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="inicialMusic" destination="pwa-Xy-ymV" id="c2B-ye-pOW"/>
+                <outlet property="nameMusic" destination="dL7-w7-RsW" id="2ut-Tz-ZOq"/>
+            </connections>
+            <point key="canvasLocation" x="85.507246376811594" y="-51.5625"/>
+        </tableViewCell>
+    </objects>
+</document>
